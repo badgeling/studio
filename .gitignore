@@ -4,3 +4,11 @@
 *target
 web-ui/javascript/build
 web-ui/javascript/report.*.json
+
+# AI/LLM assistant files
+.devin/
+.claude/
+.cursor/
+.aider*
+.copilot/
+
