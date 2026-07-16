@@ -11,7 +11,7 @@ import com.google.gson.JsonObject;
 import net.bytebuddy.asm.Advice;
 import studio.metadata.DatabaseMetadataService;
 import studio.metadata.DatabasePackMetadata;
-import sun.net.www.protocol.http.HttpURLConnection;
+import java.net.HttpURLConnection;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;

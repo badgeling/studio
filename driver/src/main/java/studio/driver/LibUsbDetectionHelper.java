@@ -44,6 +44,12 @@ public class LibUsbDetectionHelper {
      * @param listener A hotplug listener
      */
     public static void initializeLibUsb(DeviceVersion deviceVersion, DeviceHotplugEventListener listener) {
+        // Check if USB is disabled via system property
+        if (Boolean.getBoolean("studio.usb.disabled")) {
+            LOGGER.warning("USB driver is disabled via system property. Device detection will not work.");
+            return;
+        }
+
         // Init libusb
         LOGGER.info("Initializing libusb...");
         context = new Context();

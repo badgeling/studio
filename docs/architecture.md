@@ -6,7 +6,7 @@
 
 **Version actuelle :** 0.4.3-SNAPSHOT  
 **Licence :** Mozilla Public License 2.0  
-**Java :** 11 (sauf agent/metadata en Java 8)
+**Java :** 25 (tous les modules)
 
 ---
 
